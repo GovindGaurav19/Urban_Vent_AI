@@ -1,0 +1,12 @@
+{
+  "name": "urban-ventai",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node server.mjs",
+    "test": "node --test tests/*.test.js",
+    "check": "node --check server.mjs && node --check src/app.js && node --check src/domain.js && node --check src/live-data.js && node --check tests/domain.test.js && node --check tests/live-data.test.js && node --check tests/supervisor.test.js && node --check tests/server.test.js && node --check tests/app-smoke.test.js",
+    "start": "node server.mjs"
+  }
+}
