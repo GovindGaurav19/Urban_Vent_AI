@@ -1,0 +1,8 @@
+services:
+  - type: web
+    name: urban-ventai
+    runtime: node
+    plan: free
+    buildCommand: npm run check && npm test
+    startCommand: npm start
+    healthCheckPath: /api/health
